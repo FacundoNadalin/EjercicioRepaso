@@ -32,5 +32,21 @@ namespace Ejercicio_1
                 ejemplo.AgregarAlumno(nombre, dni, nota);
             }
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbpromedio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btpromedio_Click(object sender, EventArgs e)
+        {
+            ejemplo.CalcularPromedio();
+            lbpromedio.Text = Convert.ToString(ejemplo.CalcularPromedio());            
+        }
     }
 }

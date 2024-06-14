@@ -31,6 +31,8 @@
             this.btnRegistrarAlumno = new System.Windows.Forms.Button();
             this.lbpromedio = new System.Windows.Forms.Label();
             this.btpromedio = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRegistrarAlumno
@@ -47,33 +49,47 @@
             // 
             this.lbpromedio.AutoSize = true;
             this.lbpromedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbpromedio.Location = new System.Drawing.Point(262, 171);
+            this.lbpromedio.Location = new System.Drawing.Point(100, 46);
             this.lbpromedio.Name = "lbpromedio";
             this.lbpromedio.Size = new System.Drawing.Size(76, 20);
             this.lbpromedio.TabIndex = 1;
             this.lbpromedio.Text = "Promedio";
+            this.lbpromedio.Click += new System.EventHandler(this.lbpromedio_Click);
             // 
             // btpromedio
             // 
-            this.btpromedio.Location = new System.Drawing.Point(162, 159);
+            this.btpromedio.Location = new System.Drawing.Point(6, 34);
             this.btpromedio.Name = "btpromedio";
             this.btpromedio.Size = new System.Drawing.Size(75, 47);
             this.btpromedio.TabIndex = 2;
             this.btpromedio.Text = "Calcular";
             this.btpromedio.UseVisualStyleBackColor = true;
+            this.btpromedio.Click += new System.EventHandler(this.btpromedio_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btpromedio);
+            this.groupBox1.Controls.Add(this.lbpromedio);
+            this.groupBox1.Location = new System.Drawing.Point(121, 131);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Promedio";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 255);
-            this.Controls.Add(this.btpromedio);
-            this.Controls.Add(this.lbpromedio);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnRegistrarAlumno);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -82,6 +98,7 @@
         private System.Windows.Forms.Button btnRegistrarAlumno;
         private System.Windows.Forms.Label lbpromedio;
         private System.Windows.Forms.Button btpromedio;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
