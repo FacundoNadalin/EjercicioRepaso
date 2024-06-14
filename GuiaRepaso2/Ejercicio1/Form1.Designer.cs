@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.btnRegistrarAlumno = new System.Windows.Forms.Button();
+            this.lbpromedio = new System.Windows.Forms.Label();
+            this.btpromedio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegistrarAlumno
             // 
-            this.btnRegistrarAlumno.Location = new System.Drawing.Point(294, 158);
+            this.btnRegistrarAlumno.Location = new System.Drawing.Point(186, 93);
             this.btnRegistrarAlumno.Name = "btnRegistrarAlumno";
             this.btnRegistrarAlumno.Size = new System.Drawing.Size(111, 23);
             this.btnRegistrarAlumno.TabIndex = 0;
@@ -41,21 +43,45 @@
             this.btnRegistrarAlumno.UseVisualStyleBackColor = true;
             this.btnRegistrarAlumno.Click += new System.EventHandler(this.btnRegistrarAlumno_Click);
             // 
+            // lbpromedio
+            // 
+            this.lbpromedio.AutoSize = true;
+            this.lbpromedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbpromedio.Location = new System.Drawing.Point(262, 171);
+            this.lbpromedio.Name = "lbpromedio";
+            this.lbpromedio.Size = new System.Drawing.Size(76, 20);
+            this.lbpromedio.TabIndex = 1;
+            this.lbpromedio.Text = "Promedio";
+            // 
+            // btpromedio
+            // 
+            this.btpromedio.Location = new System.Drawing.Point(162, 159);
+            this.btpromedio.Name = "btpromedio";
+            this.btpromedio.Size = new System.Drawing.Size(75, 47);
+            this.btpromedio.TabIndex = 2;
+            this.btpromedio.Text = "Calcular";
+            this.btpromedio.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(517, 255);
+            this.Controls.Add(this.btpromedio);
+            this.Controls.Add(this.lbpromedio);
             this.Controls.Add(this.btnRegistrarAlumno);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnRegistrarAlumno;
+        private System.Windows.Forms.Label lbpromedio;
+        private System.Windows.Forms.Button btpromedio;
     }
 }
 

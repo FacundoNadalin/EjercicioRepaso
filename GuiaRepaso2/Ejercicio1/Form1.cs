@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ejercicio_1.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace Ejercicio_1
 {
     public partial class Form1 : Form
     {
+        Controlador ejemplo= new Controlador();
+
         public Form1()
         {
             InitializeComponent();
@@ -26,6 +29,7 @@ namespace Ejercicio_1
                 string nombre = registro.tbnombre.Text;
                 int dni = Convert.ToInt32(registro.tbdni.Text);
                 double nota = Convert.ToDouble(registro.tbnota.Text);
+                ejemplo.AgregarAlumno(nombre, dni, nota);
             }
         }
     }

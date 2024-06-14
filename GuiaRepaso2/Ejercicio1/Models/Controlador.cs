@@ -20,7 +20,7 @@ namespace Ejercicio_1.Models
             Notas[Contador] = nota;
             Contador++; 
         }
-        public void CalcularPromedio()
+        public double CalcularPromedio()
         {
             double acumulador = 0;
             double promedio = 0;
@@ -32,7 +32,25 @@ namespace Ejercicio_1.Models
             { 
                 promedio = acumulador/ Contador;
             }
-            
+            return promedio;
         }
+        public string[] Nombresprom = new string[1000];
+        public int[] DNIsprom= new int[1000];
+        public double[] Notasprom = new double[1000];
+        public int Contadorprom = 0;
+
+        public void AlumnosQueSuperanAlPromedio() 
+        { 
+            double promedio = CalcularPromedio();
+            for (int i = 0; i < Contador; i++) 
+            {
+                if (Notas[i] > promedio) 
+                {
+                    Notasprom[i]= Notas[i];
+                    DNIsprom
+                }
+            }
+        }
+
     }
 }
