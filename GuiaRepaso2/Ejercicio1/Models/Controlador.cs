@@ -40,14 +40,17 @@ namespace Ejercicio_1.Models
         public int Contadorprom = 0;
 
         public void AlumnosQueSuperanAlPromedio() 
-        { 
+        {
+            Contadorprom = 0;
             double promedio = CalcularPromedio();
             for (int i = 0; i < Contador; i++) 
             {
                 if (Notas[i] > promedio) 
                 {
-                    Notasprom[i]= Notas[i];
-                    DNIsprom
+                    Notasprom[Contadorprom]= Notas[i];
+                    DNIsprom[Contadorprom]= DNI[i];
+                    Nombresprom[Contadorprom]= Nombres[i];
+                    Contadorprom++;
                 }
             }
         }
