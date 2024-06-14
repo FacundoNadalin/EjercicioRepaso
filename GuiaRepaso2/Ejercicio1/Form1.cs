@@ -48,5 +48,20 @@ namespace Ejercicio_1
             ejemplo.CalcularPromedio();
             lbpromedio.Text = Convert.ToString(ejemplo.CalcularPromedio());            
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormVer formVer = new FormVer();
+            ejemplo.AlumnosQueSuperanAlPromedio();
+            for (int i = 0; i<ejemplo.Contadorprom; i++)
+            {
+                string nombre = ejemplo.Nombresprom[i];
+                int dni = ejemplo.DNIsprom[i];
+                double nota = ejemplo.Notasprom[i];
+
+                formVer.LbxResultados.Items.Add($"{nombre} - {dni} - {nota}");
+            }
+            formVer.ShowDialog();
+        }
     }
 }

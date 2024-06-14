@@ -32,12 +32,13 @@
             this.lbpromedio = new System.Windows.Forms.Label();
             this.btpromedio = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRegistrarAlumno
             // 
-            this.btnRegistrarAlumno.Location = new System.Drawing.Point(186, 93);
+            this.btnRegistrarAlumno.Location = new System.Drawing.Point(121, 72);
             this.btnRegistrarAlumno.Name = "btnRegistrarAlumno";
             this.btnRegistrarAlumno.Size = new System.Drawing.Size(111, 23);
             this.btnRegistrarAlumno.TabIndex = 0;
@@ -78,11 +79,22 @@
             this.groupBox1.Text = "Promedio";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(246, 72);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 255);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnRegistrarAlumno);
             this.Name = "Form1";
@@ -99,6 +111,7 @@
         private System.Windows.Forms.Label lbpromedio;
         private System.Windows.Forms.Button btpromedio;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
